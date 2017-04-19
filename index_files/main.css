@@ -25,6 +25,14 @@ body {
 .content h1 {
 	width: 350px; height: 100vh; line-height: 1; padding-top: 20px; font-family: "deconeuelight", sans-serif; font-size: 90px; margin-top: 0px; float: left; shape-outside: polygon(0 0, 100% 0, 40% 100%, 0 100%);
 }
-.content h1 span {
-	/* font-size: 0.7em;  */margin-right: -30px; display: inline-block;
+
+.content h1 b {
+	color: hsla(200,50%,50%,.9);
+	width: 120px;
+	height: 120px;
+	line-height: 120px;
+	display: block;
+	margin: 20px auto;
+	box-shadow: 0 0 10px rgba(0,0,0,.8);
+	border-radius: 50%;
 }
