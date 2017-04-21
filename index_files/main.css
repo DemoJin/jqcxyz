@@ -1,6 +1,6 @@
 @font-face {
-	font-family: deconeuelight;
-	src: url(../fonts/deconeue-light-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/deconeue-light-webfont.woff) format("woff"), url(../fonts/deconeue-light-webfont.ttf) format("truetype"), url(../fonts/deconeue-light-webfont.svg#deconeuelight) format("svg");
+	font-family: deathblood;
+	src: url(https://images.jqcxyz.com/fonts/deathblood.ttf) format("truetype");
 	font-weight: normal;
 	font-style: normal;
 }
@@ -17,7 +17,7 @@ body {
 	width: 100vw; height: 100vh; overflow: hidden;
 }
 .shaped {
-	background: url("eiffel.jpg") no-repeat top / cover black; width: 40vw; height: 100vh; float: right; -webkit-shape-outside: polygon(0 0, 100% 0, 100% 100%, 30% 100%); -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%); -webkit-shape-margin: 20px;
+	background: url("https://images.comehere.top/img/eiffel.jpg") no-repeat top / cover black; width: 40vw; height: 100vh; float: right; -webkit-shape-outside: polygon(0 0, 100% 0, 100% 100%, 30% 100%); -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%); -webkit-shape-margin: 20px;
 }
 .content {
 	padding: 30px; text-align: justify; color: black; font-family: "Nunito", sans-serif; font-size: 15px;
@@ -25,22 +25,29 @@ body {
 .content h1 {
 	width: 350px;
 	height: 100vh;
-	font-family: "deconeuelight", sans-serif;
+	font-family: "deathblood", sans-serif;
 	font-size: 150px;
-	/* margin-top: 0px; */
 	float: left;
 	shape-outside: polygon(0 0, 100% 0, 40% 100%, 0 100%);
+	color: hsla(200,50%,50%,.9);
+    text-align: center;
+    margin: 0;
 }
 
 .content h1 b {
-	color: hsla(200,50%,50%,.9);
     width: 120px;
     height: 120px;
     line-height: 120px;
     display: block;
-    margin-left: 50px;
+    margin: 0 auto;
     box-shadow: 0 0 10px rgba(0,0,0,.8);
     border-radius: 50%;
     font-size: 80px;
     text-align: center;
+    transition: all .8s;
+    cursor: pointer;
+    z-index: 10;
+}
+.content h1 b:hover{
+	box-shadow: 0 0 2px rgba(0,0,0,.8);
 }
